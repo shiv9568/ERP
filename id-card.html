@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Graphic Era ID Card Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+<body>
+
+  <!-- VIEWER HEADER (Different from Dashboard Header) -->
+  <header class="header viewer-header">
+    <div class="brand-bg">
+      <div class="brand" style="padding-left: 0;">
+        <img src="logo.png" alt="Graphic Era Logo" class="brand-logo">
+        <div class="brand-separator"></div>
+        <div class="brand-text">
+          <div class="brand-title"><span style="color:#d52924;">Graphic</span> <span style="color:#333;">Era</span></div>
+          <div class="brand-subtitle">Deemed to be University</div>
+        </div>
+      </div>
+    </div>
+    <div class="blue-spacer"></div>
+    <button class="menu-btn">
+      <span class="material-symbols-outlined" style="font-weight:bold;">menu</span>
+    </button>
+  </header>
+
+  <!-- VIEWER WINDOW -->
+  <div class="viewer-container">
+    <div class="viewer-toolbar">
+      <!-- Toolbar Row 1: Pagination and Find -->
+      <div class="viewer-toolbar-row">
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#aaa;">first_page</span></button>
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#aaa;">chevron_left</span></button>
+        <input type="text" class="viewer-input" value="1">
+        <span>of 1</span>
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#aaa;">chevron_right</span></button>
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#aaa;">last_page</span></button>
+        
+        <input type="text" class="viewer-find-input">
+        <span class="find-next-text">Find | Next</span>
+      </div>
+      <!-- Toolbar Row 2: Print/Refresh -->
+      <div class="viewer-toolbar-row">
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#000; font-size:16px;">save</span> <span class="material-symbols-outlined" style="font-size:12px">arrow_drop_down</span></button>
+        <button class="viewer-btn"><span class="material-symbols-outlined" style="color:#2196f3; font-size:16px;">refresh</span></button>
+      </div>
+    </div>
+
+    <!-- ACTUAL ID CARD -->
+    <div class="actual-id-card-wrapper">
+      <div class="actual-id-card">
+        <div class="provisional-text">PROVISIONAL ID CARD</div>
+        
+        <div class="id-card-top-logos">
+          <div class="uni-logo-area">
+            <div class="uni-top-left-logo">
+              <span class="red-text">Graphic Era</span>
+              <span class="black-text">Deemed to be University</span>
+              <span class="tiny">DEHRADUN</span>
+            </div>
+            <!-- Simulating the circular emblem -->
+            <img src="logo.png" style="width:30px; height:30px; margin: 0 10px;">
+            <div class="naac-logo">
+              <span>NAAC</span>
+              <span>GRADE <span class="red">A+</span></span>
+              <span>ACCREDITED</span>
+            </div>
+          </div>
+          
+          <div class="address-text">
+            Bell Road, Clement Town<br>
+            Dehradun-248002 Uttarakhand<br>
+            Ph. : 0135-2644183, 2642799,<br>
+            www.geu.ac.in
+          </div>
+        </div>
+
+        <div class="id-card-content">
+          <img src="avatar.png" alt="Student Photo" class="id-card-photo" id="val-avatar">
+          
+          <div class="id-card-details">
+            <div class="id-name-title" id="val-name">KRISHNA BATRA</div>
+            <div class="id-course-title" id="val-courseCard">BBA</div>
+            
+            <div class="id-detail-row">
+              <div class="id-d-label">ADMISSION NO.</div>
+              <div class="id-d-val">: <span id="val-rollNo">22091859</span></div>
+            </div>
+            
+            <div class="id-detail-row">
+              <div class="id-d-label">BATCH</div>
+              <div class="id-d-val">: <span id="val-batch">2022-2025</span></div>
+            </div>
+
+            <div class="id-detail-row">
+              <div class="id-d-label">FATHER'S NAME</div>
+              <div class="id-d-val">: <span id="val-fatherName">MANOJ KUMAR</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="id-bottom-number" id="val-bottomNo">
+          22091859
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- F. BOTTOM NAVBAR (Matches Screenshot 4 footer) -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <span class="material-symbols-outlined">home</span>
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="material-symbols-outlined">menu_book</span>
+      <span>Attendance</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="material-symbols-outlined">insert_drive_file</span>
+      <span>Syllabus</span>
+    </a>
+    <a href="index.html" class="nav-item">
+      <span class="material-symbols-outlined">laptop_mac</span>
+      <span>Dashboard</span>
+    </a>
+    <a href="settings.html" class="nav-item active">
+      <span class="material-symbols-outlined">settings</span>
+      <span>Settings</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

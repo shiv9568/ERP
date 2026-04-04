@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Graphic Era Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+  <!-- A. HEADER -->
+  <header class="header">
+    <div class="brand">
+      <img src="logo.png" alt="Graphic Era Logo" class="brand-logo">
+      <div class="brand-separator"></div>
+      <div class="brand-text">
+        <div class="brand-title"><span style="color:#d52924;">Graphic</span> <span style="color:#333;">Era</span></div>
+        <div class="brand-subtitle">Deemed to be University</div>
+      </div>
+    </div>
+    <button class="menu-btn">
+      <span class="material-symbols-outlined" style="font-weight:bold;">menu</span>
+    </button>
+  </header>
+
+  <!-- Marquee Area -->
+  <div class="marquee-container">
+    <marquee scrollamount="5">75% attendance is mandatory to be eligible for exams.</marquee>
+  </div>
+
+  <!-- D. PROFILE CARD -->
+  <div class="profile">
+    <img src="avatar.png" alt="Student Avatar" id="val-avatar">
+    <h2 id="val-name">KRISHNA BATRA</h2>
+    <div class="roll-no" id="val-rollNo">22091859</div>
+    <div class="contact">
+      <div>
+        <span class="material-symbols-outlined" style="font-size:16px">mail</span>
+        <span id="val-email">jahanvibatra19@gmail.com</span>
+      </div>
+      <div>
+        <span class="material-symbols-outlined" style="font-size:16px">call</span>
+        <span id="val-phone">9105783630</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo-text">
+    Register for technical competitions GRAFEST 2026
+  </div>
+
+  <!-- E. ID Card SECTION -->
+  <div class="id-card-section">
+    <div class="id-card-header" onclick="window.location.href='id-card.html'">
+      <span class="material-symbols-outlined">badge</span> ID Card
+    </div>
+    <div class="id-card-body">
+      <div class="row">
+        <div class="label">Father Name :</div>
+        <div class="value" id="val-fatherName">MANOJ KUMAR</div>
+      </div>
+      <div class="row">
+        <div class="label">Mother Name :</div>
+        <div class="value" id="val-motherName">SANGEETA BATRA</div>
+      </div>
+      <div class="row">
+        <div class="label">D.O.B. :</div>
+        <div class="value" id="val-dob">13/06/2022</div>
+      </div>
+      <div class="row">
+        <div class="label">Official Email :</div>
+        <div class="value" id="val-officialEmail" style="text-transform: lowercase;">22091859@geu.ac.in</div>
+      </div>
+      <div class="row">
+        <div class="label">College :</div>
+        <div class="value" style="text-transform: capitalize;">Graphic Era (Deemed to be University)</div>
+      </div>
+      <div class="row">
+        <div class="label">Course :</div>
+        <div class="value" id="val-course">BACHELOR OF BUSINESS ADMINISTRATION</div>
+      </div>
+      <div class="row">
+        <div class="label">Specialization :</div>
+        <div class="value"></div>
+      </div>
+      <div class="row">
+        <div class="label">Year/Sem :</div>
+        <div class="value" id="val-year">6</div>
+      </div>
+      <div class="row">
+        <div class="label">Branch :</div>
+        <div class="value">N/A</div>
+      </div>
+      <div class="row">
+        <div class="label">Section :</div>
+        <div class="value" id="val-section">FIN-D</div>
+      </div>
+      
+      <!-- New requested fields -->
+      <div class="row">
+        <div class="label">Class Roll No. :</div>
+        <div class="value" id="val-classRoll">0</div>
+      </div>
+      <div class="row">
+        <div class="label">Enroll No. :</div>
+        <div class="value" id="val-enrollNo">GE-22244354</div>
+      </div>
+      <div class="row">
+        <div class="label">University Roll No. :</div>
+        <div class="value" id="val-uniRoll">2404354</div>
+      </div>
+      <div class="row">
+        <div class="label">HighSchool % :</div>
+        <div class="value" id="val-highSchool">53.8</div>
+      </div>
+      <div class="row">
+        <div class="label">Intermediate % :</div>
+        <div class="value" id="val-intermediate">66.4</div>
+      </div>
+      <div class="row">
+        <div class="label">Status :</div>
+        <div class="value" id="val-status" style="text-transform: capitalize;">Alumni</div>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+
+  <!-- B. SEARCH BAR (Modules) -->
+  <div class="search-container">
+    <input type="text" class="search" placeholder="Search Modules..">
+    <button class="search-icon-btn">
+      <span class="material-symbols-outlined">apps</span>
+    </button>
+  </div>
+
+  <!-- C. DASHBOARD GRID -->
+  <div class="grid-container">
+    <div class="grid">
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2828/2828096.png" class="icon" alt="Academic">
+        <span>Academic</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3225/3225194.png" class="icon" alt="Fee">
+        <span>Fee</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3421/3421106.png" class="icon" alt="Circular">
+        <span>Circular</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" class="icon" alt="Exam">
+        <span>Exam</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" class="icon" alt="Placement">
+        <span>Placement</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2883/2883921.png" class="icon" alt="Hostel">
+        <span>Hostel</span>
+      </a>
+      <a href="#" class="grid-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3076/3076344.png" class="icon" alt="Grievance">
+        <span>Grievance</span>
+      </a>
+      <!-- Empty slots to maintain grid lines -->
+      <div class="grid-card" style="visibility: hidden"></div>
+      <div class="grid-card" style="visibility: hidden"></div>
+    </div>
+  </div>
+
+  <!-- OTHER SERVICES CARD -->
+  <div class="other-services">
+    <div class="other-services-header">
+      <span class="material-symbols-outlined">settings</span>
+      Other Services
+    </div>
+    <div class="other-services-body">
+      <!-- Empty per screenshot -->
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!-- F. BOTTOM NAVBAR -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <span class="material-symbols-outlined">home</span>
+      <span>Home</span>
+    </a>
+    <a href="index.html" class="nav-item active">
+      <span class="material-symbols-outlined">bar_chart</span>
+      <span>Dashboard</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="material-symbols-outlined">assignment</span>
+      <span>Assignment</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="material-symbols-outlined">payments</span>
+      <span>Fee</span>
+    </a>
+    <a href="settings.html" class="nav-item">
+      <span class="material-symbols-outlined">settings</span>
+      <span>Settings</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
