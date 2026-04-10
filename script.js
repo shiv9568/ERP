@@ -1,25 +1,31 @@
 const defaultData = {
-  name: "KRI BTRA",
+  name: "KRISHNA BATRA",
   avatar: "avatar.png",
-  rollNo: "2201859",
-  email: "ja19@gmail.com",
-  phone: "91562130",
-  fatherName: "MAJ MAR",
-  motherName: "SEETA RA",
-  dob: "13/06/2122",
-  officialEmail: "220913159@geu.ac.in",
+  rollNo: "22091859",
+  email: "student@gmail.com",
+  phone: "9105783630",
+  fatherName: "MANOJ KUMAR",
+  motherName: "SANGEETA BATRA",
+  dob: "13/06/2003",
+  officialEmail: "22091859@geu.ac.in",
   course: "BACHELOR OF BUSINESS ADMINISTRATION",
   courseCard: "BBA",
   year: "6",
   section: "FIN-D",
   classRoll: "0",
-  enrollNo: "GE-2224344354",
-  uniRoll: "24154",
-  highSchool: "12.8",
-  intermediate: "122.4",
+  enrollNo: "GE-22244354",
+  uniRoll: "2404354",
+  highSchool: "53.8",
+  intermediate: "66.4",
   status: "Alumni",
-  batch: "2022-2025"
+  batch: "2022-2025",
+  contactNo: "9058203198",
+  bloodGroup: "A+ve",
+  resiAddress: "House No. 4/670, Near Arya Kanya Inter College, Saharanpur, U.P.- 247001",
+  validThrough: "30-06-2025",
+  emergencyContact: "7417385008"
 };
+
 
 function getUserData() {
   const data = localStorage.getItem("geuStudentData");
