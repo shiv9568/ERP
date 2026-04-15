@@ -1,0 +1,344 @@
+/* ── ID CARD VIEWER PAGE ── */
+.id-card-page-wrapper {
+  font-family: 'Times New Roman', Times, serif;
+  background: #e8e8e8;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.card-page-title {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  padding: 10px 15px 4px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ── SCROLLABLE HORIZONTAL WRAPPER ── */
+.id-card-scroll-outer {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 10px 10px;
+}
+
+/* ── SIDE-BY-SIDE PANELS (scroll right to see back) ── */
+.id-card-panels {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  width: max-content; /* expands beyond viewport for scroll */
+}
+
+/* ── EACH CARD PANEL ── */
+.id-panel {
+  background: #fff;
+  border: 1.5px solid #555;
+  position: relative;
+  width: 363px;
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ─────────────────────────────
+   FRONT PANEL
+───────────────────────────── */
+.id-panel-front {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Vertical "PROVISIONAL ID CARD" strip */
+.provisional-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 18px;   
+  background: #fff;
+  border-right: 1.5px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 7px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+/* Everything inside front panel, offset for the strip */
+.front-inner {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── FRONT TOP HEADER ── */
+.front-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px 6px;
+  border-bottom: 2px solid #e35e1b;
+}
+
+.front-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uni-name-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.uni-name-block .uni-red {
+  color: #c62828;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Georgia, serif;
+}
+.uni-name-block .uni-deemed {
+  font-size: 8px;
+  color: #333;
+}
+.uni-name-block .uni-black {
+  color: #1a237e;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Georgia, serif;
+}
+.uni-name-block .uni-city {
+  font-size: 7.5px;
+  color: #c62828;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.front-logo-img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.naac-block {
+  border-left: 1px solid #bbb;
+  padding-left: 6px;
+  display: flex;
+  flex-direction: column;
+  font-size: 7px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #222;
+}
+.naac-block .naac-grade {
+  color: #c62828;
+  font-size: 11px;
+}
+
+.front-address {
+  font-size: 6.5px;
+  text-align: right;
+  color: #444;
+  line-height: 1.5;
+  max-width: 110px;
+}
+
+/* ── FRONT BODY (photo + details) ── */
+.front-body {
+  display: flex;
+  gap: 10px;
+  padding: 10px 10px 6px;
+  align-items: flex-start;
+}
+
+.id-photo {
+  width: 72px;
+  height: 88px;
+  object-fit: cover;
+  border: 1px solid #999;
+  flex-shrink: 0;
+}
+
+.id-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.id-student-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.id-course-label {
+  font-size: 11px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.id-info-row {
+  display: flex;
+  align-items: flex-start;
+  font-size: 9.5px;
+  line-height: 1.4;
+}
+.id-info-label {
+  font-weight: bold;
+  min-width: 88px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  color: #111;
+}
+.id-info-colon {
+  font-weight: bold;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.id-info-val {
+  color: #111;
+  flex: 1;
+  font-weight: normal;
+}
+
+/* ── FRONT BOTTOM roll no ── */
+.front-bottom-roll {
+  text-align: right;
+  padding: 2px 10px 8px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ─────────────────────────────
+   BACK PANEL
+───────────────────────────── */
+.id-panel-back {
+  padding: 10px 12px;
+}
+
+.back-info-row {
+  display: flex;
+  align-items: flex-start;
+  font-size: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.4;
+}
+.back-info-row:last-of-type {
+  border-bottom: none;
+}
+.back-info-label {
+  font-weight: bold;
+  min-width: 100px;
+  flex-shrink: 0;
+  color: #111;
+}
+.back-info-colon {
+  font-weight: bold;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.back-info-val {
+  flex: 1;
+  color: #222;
+}
+.emergency-label {
+  color: #c62828 !important;
+}
+.emergency-val {
+  color: #111;
+  font-weight: bold;
+}
+
+/* ── BACK SEPARATOR LINE ── */
+.back-separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #1a237e;
+  margin-top: 8px;
+  padding-top: 5px;
+}
+.back-separator .return-text {
+  font-size: 10px;
+  font-weight: bold;
+  color: #111;
+}
+.back-separator .issued-by {
+  font-size: 9px;
+  font-weight: bold;
+  color: #111;
+  text-align: right;
+}
+
+/* ── BACK FOOTER ── */
+.back-footer {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+.back-footer .bf-uni-name {
+  color: #1565c0;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+.back-footer .bf-address {
+  font-size: 9px;
+  color: #333;
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.back-footer .bf-web {
+  font-size: 9px;
+  color: #333;
+  margin-top: 2px;
+}
+
+/* ── PRINT BUTTON ── */
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 4px 15px 8px;
+}
+.card-action-btn {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 9px 22px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-action-btn.secondary {
+  background: #546e7a;
+}
+.card-action-btn:hover { opacity: 0.88; }
+
+@media print {
+  .id-card-page-wrapper { background: #fff; padding: 0; }
+  .header, .bottom-nav, .card-actions, .card-page-title { display: none !important; }
+  .id-card-panels { gap: 0; padding: 0; flex-direction: row; }
+  .id-panel { border: 1.5px solid #555; width: 50%; }
+}
