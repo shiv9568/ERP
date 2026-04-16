@@ -21,7 +21,7 @@ const defaultData = {
   uniRoll: "24044",
   highSchool: "3.8",
   intermediate: "6.4",
-  status: "Alumni",
+  status: " Student",
   batch: "2022-2025",
   contactNo: "9058203198",
   bloodGroup: "A+ve",
@@ -38,7 +38,7 @@ export const UserProvider = ({ children }) => {
     if (data) {
       try {
         setUserData(JSON.parse(data));
-      } catch(e) {}
+      } catch (e) { }
     }
   }, []);
 

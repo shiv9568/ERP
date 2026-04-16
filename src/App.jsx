@@ -10,7 +10,7 @@ import BottomNav from './components/BottomNav';
 function App() {
   return (
     <UserProvider>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
           <Route path="/" element={<><Dashboard /><BottomNav activePath="/" /></>} />
           <Route path="/profile" element={<><Profile /><BottomNav activePath="/profile" /></>} />
